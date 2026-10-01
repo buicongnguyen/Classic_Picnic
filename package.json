@@ -1,0 +1,25 @@
+{
+  "name": "classic-picnic",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Pip's Fruit Picnic: the classic fruit-merge picnic with the watermelon challenge and bubble free play (Three.js).",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/buicongnguyen/Classic_Picnic.git"
+  },
+  "homepage": "https://buicongnguyen.github.io/Classic_Picnic/",
+  "scripts": {
+    "dev": "node server.mjs",
+    "start": "node server.mjs",
+    "test": "node --test tests/picnic-challenge.test.mjs tests/picnic-wishes.test.mjs tests/picnic.test.mjs",
+    "test:browser": "node tests/picnic-browser.mjs && node tests/picnic-challenge-browser.mjs && node tests/picnic-coins-browser.mjs && node tests/picnic-combo-browser.mjs && node tests/picnic-fruit-browser.mjs && node tests/picnic-mobile-browser.mjs && node tests/picnic-wishes-browser.mjs",
+    "build": "node scripts/build.mjs"
+  },
+  "dependencies": {
+    "three": "0.180.0"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2",
+    "playwright": "1.61.1"
+  }
+}
